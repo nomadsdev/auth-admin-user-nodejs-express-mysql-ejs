@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex justify-center p-10">
+        <div>
+            <h2 class="text-xl text-blue-600 text-center p-5">Login</h2>
+            <form action="/login" method="post">
+                <div class="flex justify-center gap-2">
+                    <label class="text-blue-600">Username:</label>
+                    <input type="text" name="username" class="border border-blue-600 rounded-full text-blue-600 px-2">
+                </div>
+                <br>
+                <div class="flex justify-center gap-2">
+                    <label class="text-blue-600">Password:</label>
+                    <input type="password" name="password" class="border border-blue-600 rounded-full text-blue-600 px-2">
+                </div>
+                <div class="flex justify-center p-5">
+                    <button type="submit" class="text-white bg-blue-600 px-5 py-1 rounded-full hover:bg-blue-700 transition">Login</button>
+                </div>
+            </form>
+            <div class="flex justify-center text-xs">
+                <a href="/register" class="text-blue-600">Register ?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
